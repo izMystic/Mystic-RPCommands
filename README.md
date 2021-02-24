@@ -15,4 +15,4 @@ Simple script for roleplay commands in fivem
 `/darkweb` Send an anymous message (Global)
 
 # Credits
-@Jordan2139 for version check thing
+[Jordan2139](https://github.com/Jordan2139) for version check thing

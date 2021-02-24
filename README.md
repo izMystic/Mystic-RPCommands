@@ -13,3 +13,6 @@ Simple script for roleplay commands in fivem
 `/ooc` Send an out of character message (Global)
 
 `/darkweb` Send an anymous message (Global)
+
+# Credits
+@Jordan2139 for version check thing

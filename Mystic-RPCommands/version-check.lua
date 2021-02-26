@@ -1,3 +1,7 @@
+-- TOUCHING THINGS BELOW THIS LINE IS NOT RECOMMENDED UNLESS YOU KNOW WHAT YOURE DOING --
+
+-----------------------------------------------------------------------------------------
+
 local label = 
 [[ 
   //

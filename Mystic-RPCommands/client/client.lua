@@ -1,36 +1,47 @@
-------------------------------------------------------------------------------------------------------------
---   __  __           _   _           ____  ____   ____                                          _        --
---  |  \/  |_   _ ___| |_(_) ___     |  _ \|  _ \ / ___|___  _ __ ___  _ __ ___   __ _ _ __   __| |___    --
---  | |\/| | | | / __| __| |/ __|____| |_) | |_) | |   / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` / __|   --
---  | |  | | |_| \__ \ |_| | (_|_____|  _ <|  __/| |__| (_) | | | | | | | | | | | (_| | | | | (_| \__ \   --
---  |_|  |_|\__, |___/\__|_|\___|    |_| \_\_|    \____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/   --
---          |___/                                                                                         --
---                                         Made By Mystic#9999                                            --
-------------------------------------------------------------------------------------------------------------
+  --//
+  --||
+  --||           __  __           _   _           ____  ____   ____                                          _     
+  --||          |  \/  |_   _ ___| |_(_) ___     |  _ \|  _ \ / ___|___  _ __ ___  _ __ ___   __ _ _ __   __| |___ 
+  --||          | |\/| | | | / __| __| |/ __|____| |_) | |_) | |   / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` / __|
+  --||          | |  | | |_| \__ \ |_| | (_|_____|  _ <|  __/| |__| (_) | | | | | | | | | | | (_| | | | | (_| \__ \
+  --||          |_|  |_|\__, |___/\__|_|\___|    |_| \_\_|    \____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/
+  --||                  |___/                                                                                      
+  --||
+  --||                                            Made By Mystic#9999
+  --||
+  --\\
+
+-- TOUCHING THINGS BELOW THIS LINE IS NOT RECOMMENDED UNLESS YOU KNOW WHAT YOURE DOING --
+
+-----------------------------------------------------------------------------------------
 
 Citizen.CreateThread(function()
     TriggerEvent('chat:addSuggestion', '/me', 'Send a third person message (Proximity)', {
-        {name = "Action", help = "action."}
+        {name = "Action", help = "Action."}
     })
     
     TriggerEvent('chat:addSuggestion', '/do', 'Send an action message (Proximity)', {
-        {name = "Action", help = "action."}
+        {name = "Action", help = "Action."}
     })
     
     TriggerEvent('chat:addSuggestion', '/gme', 'Send a third person message (Global)', {
-        {name = "Action", help = "action."}
+        {name = "Action", help = "Action."}
     })
     
     TriggerEvent('chat:addSuggestion', '/twt', 'Send a tweet (Global)', {
-        {name = "Action", help = "action."}
+        {name = "Message", help = "Twitter Messsage."}
     })
     
     TriggerEvent('chat:addSuggestion', '/ooc', 'Send an out of character message (Global)', {
-        {name = "Action", help = "action."}
+        {name = "Message", help = "Questions or Help Requests."}
     })
     
     TriggerEvent('chat:addSuggestion', '/darkweb', 'Send an anymous message (Global)', {
-        {name = "Action", help = "action."}
+        {name = "Message", help = "Anonymous Message."}
+    })
+
+    TriggerEvent('chat:addSuggestion', '/ad', 'Send an advert (Global)', {
+        {name = "Messsage", help = "Advert Message."}
     })
 
 end)
@@ -41,9 +52,9 @@ AddEventHandler('SendProximityMe', function(id, name, message)
     local myID = PlayerId()
     local pID = GetPlayerFromServerId(id)
     if pID == myID then
-        TriggerEvent('chatMessage', "", {255, 0, 0}, " ^6 ^*ME | ^7" .. name .. "^7: " .. "^r " .. message)
+        TriggerEvent('chatMessage', "", {255, 0, 0}, "^6^*ME ^0| ^r" .. name .. "^r: " .. "^r " .. message)
     elseif GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(myID)), GetEntityCoords(GetPlayerPed(pID)), true) < 19.999 then
-        TriggerEvent('chatMessage', "", {255, 0, 0}, " ^6 ^*ME | ^7" .. name .. "^7: " .. "^r " .. message)
+        TriggerEvent('chatMessage', "", {255, 0, 0}, "^6^*ME ^0| ^r" .. name .. "^r: " .. "^r " .. message)
     end
 end)
 
@@ -53,8 +64,8 @@ AddEventHandler('SendProximityDo', function(id, name, message)
     local myID = PlayerId()
     local pID = GetPlayerFromServerId(id)
     if pID == myID then
-        TriggerEvent('chatMessage', "", {255, 0, 0}, " ^9 ^*DO | ^7" .. name .. "^7:  " .. "^r  " .. message)
+        TriggerEvent('chatMessage', "", {255, 0, 0}, "^9^*DO ^0| ^r" .. name .. "^r:  " .. "^r  " .. message)
     elseif GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(myID)), GetEntityCoords(GetPlayerPed(pID)), true) < 19.999 then
-        TriggerEvent('chatMessage', "", {255, 0, 0}, " ^9 ^*DO | ^7" .. name .. "^7:  " .. "^r  " .. message)
+        TriggerEvent('chatMessage', "", {255, 0, 0}, "^9^*DO ^0| ^r" .. name .. "^r:  " .. "^r  " .. message)
     end
 end)

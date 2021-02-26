@@ -14,5 +14,7 @@ Simple script for roleplay commands in fivem
 
 `/darkweb` Send an anymous message (Global)
 
+`/ad` Send an Advert (Global)
+
 # Credits
 [Jordan2139](https://github.com/Jordan2139) for version check thing

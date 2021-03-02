@@ -1,5 +1,5 @@
 {
-	"NewestVersion":"v1.1.0",
-	"Changes":"Added /ad command.",
+	"NewestVersion":"v1.2.0",
+	"Changes":"Fixed there not being spaces in some commands.",
 	"DownloadLocation":"https://github.com/izMystic/Mystic-RPCommands"
 }

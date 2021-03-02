@@ -30,22 +30,22 @@ end, false)
 
 -- /gme command--
 RegisterCommand('gme', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^2^*GLOBAL ME ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, ""))
+    TriggerClientEvent('chatMessage', -1, "^2^*GLOBAL ME ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, " "))
 end, false)
 
 -- /twt command --
 RegisterCommand('twt', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^5^*Twitter ^0| ^r@" .. GetPlayerName(source) .. "^r", {30, 144, 255}, table.concat(args, ""))
+    TriggerClientEvent('chatMessage', -1, "^5^*Twitter ^0| ^r@" .. GetPlayerName(source) .. "^r", {30, 144, 255}, table.concat(args, " "))
 end, false)
 
 -- /occ command --
 RegisterCommand('ooc', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^4^*OOC ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, ""))
+    TriggerClientEvent('chatMessage', -1, "^4^*OOC ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, " "))
 end, false)
 
 -- /darkweb --
 RegisterCommand('darkweb', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^*Darkweb ^0| ^7@Anonymous ^r", {0, 0, 0}, table.concat(args, ""))
+    TriggerClientEvent('chatMessage', -1, "^*Darkweb ^0| ^7@Anonymous ^r", {0, 0, 0}, table.concat(args, " "))
 end, false)
 
 -- /ad command --

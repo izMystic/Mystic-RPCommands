@@ -20,7 +20,7 @@ games{'gta5'}
 name 'Mystic-RPCommands'
 author 'Mystic'
 description 'Roleplay Commands'
-version 'v1.2.0'
+version 'v1.3.0'
 url 'https://github.com/izMystic/Mystic-RPCommands'
 
 client_scripts {
@@ -31,3 +31,5 @@ server_scripts {
     'version-check.lua',
     'server/server.lua'
 }
+
+shared_script 'config.lua'

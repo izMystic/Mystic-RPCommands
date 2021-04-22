@@ -52,9 +52,9 @@ AddEventHandler('SendProximityMe', function(id, name, message)
     local myID = PlayerId()
     local pID = GetPlayerFromServerId(id)
     if pID == myID then
-        TriggerEvent('chatMessage', "", {255, 0, 0}, "^6^*ME ^0| ^r" .. name .. "^r: " .. "^r " .. message)
+        TriggerEvent('chatMessage', "", {255, 0, 0}, "^".. CONFIG.ME_COLOR .."^*ME ^0| ^r" .. name .. "^r: " .. "^r " .. message)
     elseif GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(myID)), GetEntityCoords(GetPlayerPed(pID)), true) < 19.999 then
-        TriggerEvent('chatMessage', "", {255, 0, 0}, "^6^*ME ^0| ^r" .. name .. "^r: " .. "^r " .. message)
+        TriggerEvent('chatMessage', "", {255, 0, 0}, "^".. CONFIG.ME_COLOR .."^*ME ^0| ^r" .. name .. "^r: " .. "^r " .. message)
     end
 end)
 
@@ -64,8 +64,8 @@ AddEventHandler('SendProximityDo', function(id, name, message)
     local myID = PlayerId()
     local pID = GetPlayerFromServerId(id)
     if pID == myID then
-        TriggerEvent('chatMessage', "", {255, 0, 0}, "^9^*DO ^0| ^r" .. name .. "^r:  " .. "^r  " .. message)
+        TriggerEvent('chatMessage', "", {255, 0, 0}, "^".. CONFIG.DO_COLOR .."^*DO ^0| ^r" .. name .. "^r:  " .. "^r  " .. message)
     elseif GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(myID)), GetEntityCoords(GetPlayerPed(pID)), true) < 19.999 then
-        TriggerEvent('chatMessage', "", {255, 0, 0}, "^9^*DO ^0| ^r" .. name .. "^r:  " .. "^r  " .. message)
+        TriggerEvent('chatMessage', "", {255, 0, 0}, "^".. CONFIG.DO_COLOR .."^*DO ^0| ^r" .. name .. "^r:  " .. "^r  " .. message)
     end
 end)

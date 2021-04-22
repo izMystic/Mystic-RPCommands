@@ -1,5 +1,5 @@
 {
-	"NewestVersion":"v1.2.0",
-	"Changes":"Fixed there not being spaces in some commands.",
+	"NewestVersion":"v1.3.0",
+	"Changes":"Added configurable colors for commands.",
 	"DownloadLocation":"https://github.com/izMystic/Mystic-RPCommands"
 }

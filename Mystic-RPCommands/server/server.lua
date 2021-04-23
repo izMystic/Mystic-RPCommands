@@ -38,7 +38,7 @@ RegisterCommand('twt', function(source, args, user)
     TriggerClientEvent('chatMessage', -1, "^".. CONFIG.TWT_COLOR .."^*Twitter ^0| ^r@" .. GetPlayerName(source) .. "^r", {30, 144, 255}, table.concat(args, " "))
 end, false)
 
--- /occ command --
+-- /ooc command --
 RegisterCommand('ooc', function(source, args, user)
     TriggerClientEvent('chatMessage', -1, "^".. CONFIG.OOC_COLOR .."^*OOC ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, " "))
 end, false)

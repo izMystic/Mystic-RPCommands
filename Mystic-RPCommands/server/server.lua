@@ -30,25 +30,25 @@ end, false)
 
 -- /gme command--
 RegisterCommand('gme', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^".. CONFIG.GME_COLOR .."^*GLOBAL ME ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, " "))
+    TriggerClientEvent('chatMessage', -1, "^".. Config.GME-Color .."^*GLOBAL ME ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, " "))
 end, false)
 
 -- /twt command --
 RegisterCommand('twt', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^".. CONFIG.TWT_COLOR .."^*Twitter ^0| ^r@" .. GetPlayerName(source) .. "^r", {30, 144, 255}, table.concat(args, " "))
+    TriggerClientEvent('chatMessage', -1, "^".. Config.TWT-Color .."^*Twitter ^0| ^r@" .. GetPlayerName(source) .. "^r", {30, 144, 255}, table.concat(args, " "))
 end, false)
 
 -- /ooc command --
 RegisterCommand('ooc', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^".. CONFIG.OOC_COLOR .."^*OOC ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, " "))
+    TriggerClientEvent('chatMessage', -1, "^".. Config.OOC-Color .."^*OOC ^0| ^r" .. GetPlayerName(source) .. "^r", {128, 128, 128}, table.concat(args, " "))
 end, false)
 
 -- /darkweb --
 RegisterCommand('darkweb', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^".. CONFIG.DARKWEB_COLOR .."^*Darkweb ^0| ^7@Anonymous ^r", {0, 0, 0}, table.concat(args, " "))
+    TriggerClientEvent('chatMessage', -1, "^".. Config.Darkweb-Color .."^*Darkweb ^0| ^7@Anonymous ^r", {0, 0, 0}, table.concat(args, " "))
 end, false)
 
 -- /ad command --
 RegisterCommand('ad', function(source, args, user)
-    TriggerClientEvent('chatMessage', -1, "^".. CONFIG.ADVERT_COLOR .."^*ADVERT ^0| ^r" .. GetPlayerName(source), {255,215,0}, table.concat(args, " "))
+    TriggerClientEvent('chatMessage', -1, "^".. Config.Advert-ColorR .."^*ADVERT ^0| ^r" .. GetPlayerName(source), {255,215,0}, table.concat(args, " "))
 end, false)

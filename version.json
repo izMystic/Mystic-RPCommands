@@ -1,5 +1,5 @@
 {
-	"NewestVersion":"v1.3.0",
-	"Changes":"Added configurable colors for commands.",
+	"NewestVersion":"v1.3.1",
+	"Changes":"Change config format.",
 	"DownloadLocation":"https://github.com/izMystic/Mystic-RPCommands"
 }

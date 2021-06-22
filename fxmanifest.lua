@@ -20,7 +20,7 @@ games{'gta5'}
 name 'Mystic-RPCommands'
 author 'Mystic'
 description 'Roleplay Commands'
-version 'v1.3.2'
+version 'v1.3.3'
 url 'https://github.com/izMystic/Mystic-RPCommands'
 
 client_scripts {

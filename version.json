@@ -1,5 +1,5 @@
 {
-	"NewestVersion":"v1.3.2",
-	"Changes":"Actually works now.",
+	"NewestVersion":"v1.3.3",
+	"Changes":"Bug fixes + updated chat sending method",
 	"DownloadLocation":"https://github.com/izMystic/Mystic-RPCommands"
 }
